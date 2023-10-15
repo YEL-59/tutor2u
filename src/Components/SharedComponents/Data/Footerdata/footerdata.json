@@ -1,0 +1,30 @@
+[
+
+	{
+		"id": 1,
+		"name": "Quick Link",
+		"subname": [
+			{ "id": 1, "name": "Our Services", "link": "/" },
+			{ "id": 2, "name": "FAQ", "link": "/" },
+			{ "id": 3, "name": "Privacy Policy", "link": "/" },
+			{ "id": 4, "name": "Terms of Service", "link": "/" }
+		]
+	},
+	{
+		"id": 2,
+		"name": "Contact Us",
+		"subname": [
+			{ "id": 1, "name": "+61 1300 894 946", "link": "/" },
+			{ "id": 2, "name": "www.hello@krazyit.com", "link": "/" },
+			{ "id": 3, "name": "Refunds & Return Policy", "link": "/" }
+		]
+	},
+	{
+		"id": 3,
+		"name": "Newslatter",
+		"subname": [
+			{ "id": 1, "name": "Subscribe to our newsletter to stay up", "link": "/" },
+			{ "id": 2, "name": "to date on everything Krazy IT Enter", "link": "/" }
+		]
+	}
+]
