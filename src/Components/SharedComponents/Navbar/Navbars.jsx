@@ -7,11 +7,12 @@ import {  Link } from 'react-router-dom';
 
 const Navbars = () => {
     let Links = [
-		{ name: 'Home', link: '/home' },
+		{ name: 'Home', link: '/' },
 		{ name: 'About Us', link: '/about_us' },
 		{ name: 'Tution job', link: '/flight' },
 		{ name: 'Contact Us', link: '/contact_us' },
-        { name: 'Find Tutor', link: '/' },
+    { name: 'Request a Tutor', link: '/request_tutor' },
+		{ name: 'Find Tutor', link: '/find_tutor' },
 	];
 
 	let [open, setOpen] = useState(false);
@@ -20,9 +21,9 @@ const Navbars = () => {
   <>
   
   <div>
-  <nav className="md:flex items-baseline justify-around text-black py-2 md:px-15 px-5">
+  <nav className="md:flex items-baseline justify-between text-black py-2  bg-white container mx-auto">
 			<div className="font-bold text-3xl">
-				<a href="/">mastermind</a>
+				<a href="/">Tutor2U</a>
 			</div>
 
 			<div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-1 cursor-pointer md:hidden">
@@ -35,30 +36,30 @@ const Navbars = () => {
 				}`}
 			>
 				{Links.map((link) => (
-					<li key={link.name} className="md:ml-4 md:text-xs  md:my-0 my-7 lg:text-lg">
-						<Link to={link.link} className="duration-500 ">
+					<li key={link.name} className="md:ml-4 md:text-xs truncate  md:my-0 my-7 lg:text-lg">
+						<Link to={link.link} className="duration-500  font-medium">
 							{link.name}
 						</Link>
 					</li>
 				))}
-				<li className="md:hidden my-3">
+				<li className="md:hidden my-3 truncate">
 					{/* <a href="/">Login</a> */}
 					<Link to="login">Login</Link>
 				</li>
-				<li className="md:hidden">
+				<li className="md:hidden truncate">
 					<Link to="signup">Create An Account</Link>
 					{/* <a href="/">Create An Account</a> */}
 				</li>
 			</ul>
 
-			<div className="hidden md:flex md:items-center md:justify-between md:gap-5 ">
+			<div className="hidden md:flex md:items-center ml-2 md:justify-between md:gap-5 ">
 				
 
-				<button className="bg-[#C8D8E5] text-[#089bab] px-5 py-1 rounded font-bold">
+				<button className="bg-[#C8D8E5] text-[#089bab] px-5 py-1 rounded font-bold truncate">
 					<Link to="/login">Become a tutor</Link>
 				</button>
 
-				<button className="bg-[#089bab] text-white px-5 py-1 rounded font-bold">
+				<button className="bg-[#089bab] text-white px-5 py-1 rounded font-bold truncate">
 					<Link to="/signup">Sign in</Link>
 				</button>
 			</div>
