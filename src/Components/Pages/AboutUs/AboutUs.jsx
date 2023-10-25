@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Navbars from "../../SharedComponents/Navbar/Navbars";
-
+import aboutsideimg from "../../../assets/AboutUs/about-us-side-banner.png";
+import problemresolvedsideimg from "../../../assets/AboutUs/problem-resolved-side-img.png";
+import solutionsideimg from "../../../assets/AboutUs/solution-side-img.png";
+import howitworkimg from "../../../assets/AboutUs/how-it work-img.png";
 import { Accordion } from 'flowbite-react';
 const AboutUs = () => {
     const [navfix, setNavfix] = useState(false);
@@ -41,7 +44,7 @@ const AboutUs = () => {
                         </div>
 
                         <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center">
-                            <img alt="Top-Banner-Side-Image" className=" " src="" />
+                            <img alt="Top-Banner-Side-Image" className=" " src={aboutsideimg} />
                         </div>
                     </div>
                 </div>
@@ -55,7 +58,7 @@ const AboutUs = () => {
                 <div className="container px-5  lg:py-14 md:py-12   mx-auto mb-10 ">
                     <div className=" mx-auto flex flex-wrap px-5 md:flex-row flex-col items-center space-xr-4">
                         <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center ">
-                            <img alt="Top-Banner-Side-Image" className=" " src="" />
+                            <img alt="Top-Banner-Side-Image" className=" " src={problemresolvedsideimg} />
                         </div>
                         <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5 ">
                             <div className="xl:w-[48rem] xl:ml-10  md:ml-5">
@@ -96,7 +99,7 @@ const AboutUs = () => {
                         </div>
 
                         <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center">
-                            <img alt="Top-Banner-Side-Image" className=" " src="" />
+                            <img alt="Top-Banner-Side-Image" className=" " src={solutionsideimg} />
                         </div>
                     </div>
                 </div>
@@ -119,7 +122,7 @@ const AboutUs = () => {
                         <img
                             alt="hero"
                             className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
-                            src=""
+                            src={howitworkimg}
                         />
                     </div>
 
@@ -193,7 +196,7 @@ const AboutUs = () => {
                         </div>
 
                         <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center">
-                            <img alt="Top-Banner-Side-Image" className=" " src="" />
+                            <img alt="Top-Banner-Side-Image" className=" " src={solutionsideimg} />
                         </div>
                     </div>
                 </div>
@@ -336,7 +339,7 @@ const AboutUs = () => {
                             </div>
                             {/* right side small dev */}
                             <div className="col-span-12 lg:col-span-3 ">
-                                <div className=" w-auto  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <div className=" w-auto  bg-[#363233] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                                     <div className="p-4  py-16">
                                         <div className="text-center  w-full">
                                             <h1 className="title-font text-white text-[24px]  title-font font-me  mb-4">
@@ -351,6 +354,8 @@ const AboutUs = () => {
                                             <a href="#"
                                                 className=" bg-[#1570FA] text-white no-underline hover:bg-[#4e84d4] mt-4  px-9 py-2 rounded-3xl    text-[16px] font-[500]"
                                             >Ask Question</a>
+
+                                            
                                         </div>
                                     </div>
 

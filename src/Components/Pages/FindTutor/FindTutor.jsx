@@ -1,8 +1,6 @@
-
-
 import { useEffect, useState } from "react";
 import Navbars from "../../SharedComponents/Navbar/Navbars";
-// import aboutsideimg from "../../../assets/AboutUs/about-us-side-banner.png";
+import aboutsideimg from "../../../assets/AboutUs/about-us-side-banner.png";
 import { useForm } from 'react-hook-form';
 import { RxCross2 } from 'react-icons/rx';
 import { AiOutlineHeart } from 'react-icons/ai'
@@ -61,9 +59,9 @@ const FindTutor = () => {
 
   return (
     <div>
-      <div className={`z-10 ${navfix ? 'top-0 h-[4%] w-full fixed bg-[white]' : ''}`} >
+      {/* <div className={`z-10 ${navfix ? 'top-0 h-[4%] w-full fixed bg-[white]' : ''}`} >
         <Navbars className='relative' />
-      </div>
+      </div> */}
 
       <section className="ContactUs_Top_Banner bg-[#2C6777]">
         <div className="container px-5 py-10 lg:py-14 md:py-10  mx-auto ">
@@ -84,7 +82,7 @@ const FindTutor = () => {
             </div>
 
             <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center">
-              {/* <img alt="Top-Banner-Side-Image" className=" " src={} /> */}
+              <img alt="Top-Banner-Side-Image" className=" " src={aboutsideimg} />
             </div>
           </div>
         </div>
@@ -141,12 +139,11 @@ const FindTutor = () => {
 
                   <div>
                     <div>
-                      {/*  */}
 
                       <div className="flex flex-wrap items-center justify-between ">
 
                         <div className="flex gap-2 justify-center items-center">
-                          {/* <img className="w-10 h-10 rounded" src={aboutsideimg} alt="" /> */}
+                          <img className="w-10 h-10 rounded" src={aboutsideimg} alt="" />
 
 
 
@@ -160,8 +157,6 @@ const FindTutor = () => {
                               <span className="w-3 h-3 mx-1.5 mt-1 bg-gray-500 rounded "></span>
                               <a href="#" className="text-sm font-medium truncate text-gray-900 underline hover:no-underline ">73 reviews</a>
                             </div>
-
-                            
                           </div>
 
 
@@ -178,7 +173,7 @@ const FindTutor = () => {
                   </div>
                   <div className="mt-2">
                     {/* <h5 className="mb-2 text-3xl text-start font-bold text-gray-900 ">Work fast from anywhere</h5> */}
-                    <p className="mb-2 text-start text-gray-500 text-sm ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry,s standard dummy text ever.</p>
+                    <p className="mb-2 text-start text-gray-500 text-sm ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
                   </div>
 
                   <div className="flex flex-wrap justify-between">
