@@ -11,7 +11,7 @@ const Navbars = () => {
 		{ name: 'About Us', link: '/about_us' },
 		{ name: 'Tution job', link: '/flight' },
 		{ name: 'Contact Us', link: '/contact_us' },
-        { name: 'Find Tutor', link: '/' },
+        { name: 'Find Tutor', link: '/find_tutor' },
 	];
 
 	let [open, setOpen] = useState(false);
