@@ -1,6 +1,7 @@
 import aboutsideimg from "../../../../assets/AboutUs/about-us-side-banner.png"
 import { AiOutlineHeart } from 'react-icons/ai'
 import { BiIdCard } from 'react-icons/bi'
+import { Link } from "react-router-dom"
 
 
 const FindTutors = ({findTutorProps}) => {
@@ -57,11 +58,11 @@ const FindTutors = ({findTutorProps}) => {
           </div>
           <div>
             <button className="text-sm text-white font-medium bg-[#2c6777] rounded-full px-3  mr-2 py-1">Chat Now</button>
-            <button className="text-sm text-white font-medium bg-[#2c6777] rounded-full py-1 px-3 ">View profile</button>
+            <Link to={"/tutor_details/:id"} className="text-sm text-white font-medium bg-[#2c6777] rounded-full py-1 px-3 ">View profile</Link>
           </div>
 
         </div>
-
+       
       </div>
     </>
   )
