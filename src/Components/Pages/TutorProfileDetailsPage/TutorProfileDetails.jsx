@@ -3,11 +3,10 @@
 import { useEffect, useState } from "react";
 
 import B from "../../SharedComponents/Data/TutorProfilefdata/TutorProfiledata.json";
-import FindTutors from "../Props/FindTutor/FindTutors";
 import Navbars from "../../SharedComponents/Navbar/Navbars";
 import TutorProfile from "../Props/TutorProfile/TutorProfile";
 
-const TutorProfileDetails = () => {
+const TutorProfileDetails = ({ tutorId }) => {
   const [navfix, setNavfix] = useState(false);
   const [showCount, setShowCount] = useState(2);
 
@@ -83,14 +82,14 @@ const TutorProfileDetails = () => {
               </h3>
               <div className="grid grid-cols-12 gap-4  p-2 mt-10">
                 <div className="col-span-12 md:col-span-8 lg:col-span-9 mb-6 lg:mb-0">
-                  {
-                    B.map((TutorProfileProps) => (
-                      //console.log(TutorProfileProps.length)
-                      <TutorProfile
-                        key={TutorProfileProps.id}
-                        TutorProfileProps={TutorProfileProps}
-                      />
-                    ))}
+                  {B.map((TutorProfileProps) => (
+                    //console.log(TutorProfileProps.length)
+                    <TutorProfile
+                      key={TutorProfileProps.id}
+                      TutorProfileProps={TutorProfileProps}
+                      tutorId={tutorId}
+                    />
+                  ))}
                 </div>
                 <div className="col-span-12 md:col-span-4 lg:col-span-3 ">
                   <div>

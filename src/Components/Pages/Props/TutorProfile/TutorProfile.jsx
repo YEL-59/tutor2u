@@ -94,21 +94,15 @@ const TutorProfile = ({ TutorProfileProps }) => {
                     4 95% job Complete
                   </p>
                 </div>
-             
               </div>
               <p className="text-sm text-start">Language I know</p>
-                <div className="flex flex-wrap space-x-1 text-start">
-                    <p className="  text-xs font-medium text-gray-900 ">
-                    English
-                    </p>
-                    <p className="ml-2  text-xs font-medium text-gray-900 ">
-                    Hindi
-                    </p>
-                    <p className="ml-2  text-xs font-medium text-gray-900 ">
-                    Urdu
-                    </p>
-
-                    </div>
+              <div className="flex flex-wrap space-x-1 text-start">
+                <p className="  text-xs font-medium text-gray-900 ">English</p>
+                <p className="ml-2  text-xs font-medium text-gray-900 ">
+                  Hindi
+                </p>
+                <p className="ml-2  text-xs font-medium text-gray-900 ">Urdu</p>
+              </div>
             </div>
           </div>
         </div>
@@ -129,10 +123,10 @@ const TutorProfile = ({ TutorProfileProps }) => {
               Chat Now
             </button>
             <Link
-              to={"/tutor_details/:id"}
+              to={`/tutor_details/${id}`}
               className="text-sm text-white font-medium bg-[#2c6777] rounded-full py-1 px-3 "
             >
-              View profile
+              View profilel
             </Link>
           </div>
         </div>

@@ -1,6 +1,6 @@
 [
-      {"id":1,
-        "name": "John Doe",
+      {"id":0,
+        "name": "Garrett Rosa",
         "balance": 5000.00,
         "title": "Senior Software Engineer with Expertise in Java",
         "rating": 4.8,
@@ -8,24 +8,14 @@
         "profileLink": "https://example.com/profile/johndoe",
         "profileImage": "https://example.com/images/johndoe.jpg"
       },
-      {"id":2,
-        "name": "Jane Smith",
-        "balance": 8000.00,
-        "title": "Experienced Product Manager in Tech Industry",
-        "rating": 4.5,
-        "languages": ["English", "German", "Mandarin"],
-        "profileLink": "https://example.com/profile/janesmith",
-        "profileImage": "https://example.com/images/janesmith.jpg"
-      },
-      {"id":3,
-        "name": "Bob Johnson",
-        "balance": 3000.00,
-        "title": "Junior Full Stack Developer with Web Development Skills",
-        "rating": 4.2,
-        "languages": ["English", "Spanish"],
-        "profileLink": "https://example.com/profile/bobjohnson",
-        "profileImage": "https://example.com/images/bobjohnson.jpg"
-      }
+      {"id":1,
+      "name": "G Rosa",
+      "balance": 5000.00,
+      "title": "Senior Software Engineer with Expertise in Java",
+      "rating": 4.8,
+      "languages": ["English", "Spanish", "French"],
+      "profileLink": "https://example.com/profile/johndoe",
+      "profileImage": "https://example.com/images/johndoe.jpg"
+    }
     ]
-  
   
