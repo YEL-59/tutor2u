@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbars from "../../SharedComponents/Navbar/Navbars";
 import aboutsideimg from "../../../assets/AboutUs/about-us-side-banner.png";
 import { useForm } from 'react-hook-form';
+import Footer from "../../SharedComponents/Footer/Footer";
 
 const RequestTutor = () => {
   const [navfix, setNavfix] = useState(false);
@@ -21,10 +22,9 @@ const RequestTutor = () => {
 
   return (
     <>
-      <div>
-        <div className={`z-10 ${navfix ? "top-0 h-[10%] w-full fixed bg-[#523970]" : ""}`}>
-          <Navbars />
-        </div>
+        <div className={`z-10 container-xl mx-auto xl:px-56 ${navfix ? ' top-0 h-[8%] w-full fixed bg-white ' : ''}`} >
+        <Navbars className='relative ' />
+
       </div>
       {/* About top banner start */}
 
@@ -306,6 +306,9 @@ const RequestTutor = () => {
 
 
 
+      </section>
+      <section className="">
+        <Footer/>
       </section>
 
     </>

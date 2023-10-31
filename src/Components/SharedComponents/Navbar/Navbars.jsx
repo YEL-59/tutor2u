@@ -9,7 +9,7 @@ const Navbars = () => {
     let Links = [
 		{ name: 'Home', link: '/' },
 		{ name: 'About Us', link: '/about_us' },
-		{ name: 'Tution job', link: '/flight' },
+		{ name: 'Tution job', link: '/tutor_job' },
 		{ name: 'Contact Us', link: '/contact_us' },
     { name: 'Request a Tutor', link: '/request_tutor' },
 		{ name: 'Find Tutor', link: '/find_tutor' },
@@ -21,7 +21,7 @@ const Navbars = () => {
   <>
   
   <div>
-  <nav className="md:flex items-baseline justify-between text-black py-2  bg-white container mx-auto">
+  <nav className="md:flex items-baseline justify-between  text-black py-2   ">
 			<div className="font-bold text-3xl">
 				<a href="/">Tutor2U</a>
 			</div>
@@ -31,7 +31,7 @@ const Navbars = () => {
 			</div>
 
 			<ul
-				className={`md:flex md:items-center  md:bg-inherit   md:pb-0 pb-12 absolute md:static text-[#089bab]  md:z-auto z-[1] right-0 w-full h-screen md:h-full md:w-auto mt-4 md:pl-0 pl-5 transition-all duration-500 ease-in-out ${
+				className={`md:flex md:items-center  md:bg-inherit   md:pb-0 pb-12 absolute md:static text-[#089bab] bg-white md:z-auto z-[1] right-0 w-full h-screen md:h-full md:w-auto mt-2 md:pl-0 pl-5 transition-all duration-500 ease-in-out ${
 					open ? 'right-19' : 'hidden'
 				}`}
 			>
@@ -56,7 +56,7 @@ const Navbars = () => {
 				
 
 				<button className="bg-[#C8D8E5] text-[#089bab] px-5 py-1 rounded font-bold truncate">
-					<Link to="/login">Become a tutor</Link>
+					<Link to="/becomea_tutor">Become a tutor</Link>
 				</button>
 
 				<button className="bg-[#089bab] text-white px-5 py-1 rounded font-bold truncate">
