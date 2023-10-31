@@ -49,7 +49,7 @@ const ExploreTutor = ({ exploretutordata }) => {
                 </p>
 
               </div>
-              <div className="inline-flex items-center text-base font-bold text-gray-900 ">
+              <div className="inline-flex truncate items-center text-base font-bold text-gray-900 ">
                 {email}
               </div>
             </div>

@@ -9,6 +9,7 @@ import StarRating from "../../SharedComponents/Helper/StartRating/StarRating";
 import A from "../../SharedComponents/Data/FindTutordata/FindTutordata.json";
 import FindTutors from "../Props/FindTutor/FindTutors";
 import TutorProfileDetails from "../TutorProfileDetailsPage/TutorProfileDetails";
+import Footer from "../../SharedComponents/Footer/Footer";
 
 const FindTutor = () => {
   const [navfix, setNavfix] = useState(false);
@@ -76,9 +77,10 @@ const FindTutor = () => {
   };
   return (
     <div>
-      {/* <div className={`z-10 ${navfix ? 'top-0 h-[4%] w-full fixed bg-[white]' : ''}`} >
-        <Navbars className='relative' />
-      </div> */}
+      <div className={`z-10 container-xl mx-auto xl:px-56 ${navfix ? ' top-0 h-[8%] w-full fixed bg-white ' : ''}`} >
+        <Navbars className='relative ' />
+
+      </div>
 
       <section className="ContactUs_Top_Banner bg-[#2C6777]">
         <div className="container px-5 py-10 lg:py-14 md:py-10  mx-auto ">
@@ -296,8 +298,8 @@ const FindTutor = () => {
               </div>
             </div>
 
-            <div>
-              <div className="flex justify-between items-center bg-[#2c6777] rounded-md p-5 mt-5 mb-5">
+            <div className="p-2 lg:p-0">
+              <div className="flex flex-wrap justify-between j items-center bg-[#2c6777] rounded-md p-5 mt-5 mb-5">
                 <div className="text-white">
                   <h2 className="text-2xl font-semibold">
                     Request the best tutor for your child
@@ -308,7 +310,7 @@ const FindTutor = () => {
                   </p>
                 </div>
                 <div>
-                  <button className="bg-white text-black text-sm font-normal px-3 py-2 rounded-full">
+                  <button className="bg-white text-black text-sm  font-normal px-3 py-2 rounded-full">
                     Request a Tutor
                   </button>
                 </div>
@@ -316,6 +318,9 @@ const FindTutor = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section className="">
+        <Footer />
       </section>
     </div>
   );
