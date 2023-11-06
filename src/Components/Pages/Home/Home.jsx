@@ -146,6 +146,7 @@ const Home = () => {
       </section>
       <section className="div3-Section w-full container mx-auto ">
         <div className=" mt-16 mb-16">
+          
           <div>
             <div className=" p-5  ">
               <h1 className=" text-3xl max-w-3xl mx-auto text-center font-medium mb-10">
