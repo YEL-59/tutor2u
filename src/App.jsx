@@ -7,6 +7,7 @@ import FindTutor from "./Components/Pages/FindTutor/FindTutor";
 import NotFoundpage from "./Components/Pages/NotFoundPage/NotFoundpage";
 import TutorDetails from "./Components/Pages/TutorProfileDetailsPage/TutorProfileDetails";
 import BecomeaTutor from "./Components/Pages/BecomeaTutot/BecomeaTutor";
+import Blog from "./Components/Pages/Blog/Blog";
 const App = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/request_tutor" element={<RequestTutor />} />
 <Route path="/becomea_tutor" element={<BecomeaTutor/>}/>
         <Route path="/find_tutor/" element={<FindTutor />} />
+        <Route path="/tutor_blog/" element={<Blog />} />
         {/*  <Route path="/find_tutor" element={<FindTutor/>}/> */}
         <Route path="/tutor_details/:tutorId" element={<TutorDetails />} />
         <Route path="/404" element={<NotFoundpage />} />

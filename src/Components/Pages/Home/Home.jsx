@@ -23,7 +23,7 @@ const Home = () => {
   }
   window.addEventListener('scroll', setFixed);
 
-  const [loadmore, setLoadMore] = useState(3)
+  const [loadmore, setLoadMore] = useState(4)
   function handleLoadMore() {
     setLoadMore(prevNum => prevNum + 3);
   }
@@ -180,7 +180,7 @@ const Home = () => {
             <h1 className="text-[24px] text-gray-700 xl:text-[40px] lg:text-[36px] md:text-[27px] text-center py-16  font-[650] max-w-xl mx-auto ">Every Tutor is Professional and Highly Qualified</h1>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center justify-items-center items-center  gap-5 p-2   ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center justify-items-center items-center  gap-5 p-2   ">
 
 
             {
