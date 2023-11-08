@@ -1,0 +1,11 @@
+[
+  {"id":0,
+    "name": "Garrett Rosa",
+    "balance": 5000.00,
+    "title": "Senior Software Engineer with Expertise in Java",
+    "rating": 4.8,
+    "languages": ["English", "Spanish", "French"],
+    "profileLink": "https://example.com/profile/johndoe",
+    "profileImage": "https://example.com/images/johndoe.jpg"
+  }
+]

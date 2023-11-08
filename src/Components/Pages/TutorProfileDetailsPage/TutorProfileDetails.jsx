@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import B from "../../SharedComponents/Data/TutorProfilefdata/TutorProfiledata.json";
+import B from "../../SharedComponents/Data/Tutotprofiledata/TutorProfiledata.json";
 import Navbars from "../../SharedComponents/Navbar/Navbars";
 import TutorProfile from "../Props/TutorProfile/TutorProfile";
 
