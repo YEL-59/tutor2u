@@ -4,7 +4,7 @@ import aboutsideimg from "../../../assets/AboutUs/about-us-side-banner.png";
 import { useForm } from "react-hook-form";
 import { RxCross2 } from "react-icons/rx";
 
-import StarRating from "../../SharedComponents/Helper/StartRating/StarRating";
+import StarRating from "../../SharedComponents/Helper/StarRating/StarRating";
 
 import A from "../../SharedComponents/Data/FindTutordata/FindTutordata.json";
 import FindTutors from "../Props/FindTutor/FindTutors";

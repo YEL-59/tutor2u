@@ -1,6 +1,6 @@
 //import  { useState } from 'react';
 
-const StarRating = ({ selectedStars, setSelectedStars, clearFilter }) => {
+const StarRating = ({ selectedStars, setSelectedStars,clearFilter  }) => {
   //const [selectedStars, setSelectedStars] = useState([]);
 
   const handleStarClick = (selectedRating) => {
@@ -10,7 +10,7 @@ const StarRating = ({ selectedStars, setSelectedStars, clearFilter }) => {
 
     setSelectedStars(updatedStars);
     console.log(`User selected ${selectedRating} stars.`);
-    console.log("Selected stars array:", updatedStars);
+    console.log('Selected stars array:', updatedStars);
   };
 
   const stars = [1, 2, 3, 4, 5].map((index) => (
@@ -18,7 +18,7 @@ const StarRating = ({ selectedStars, setSelectedStars, clearFilter }) => {
       key={index}
       onClick={() => handleStarClick(index)}
       className={`cursor-pointer text-2xl ${
-        selectedStars.includes(index) ? "text-yellow-500" : "text-gray-300"
+        selectedStars.includes(index) ? 'text-yellow-500' : 'text-gray-300'
       }`}
     >
       ★
@@ -28,9 +28,9 @@ const StarRating = ({ selectedStars, setSelectedStars, clearFilter }) => {
   return (
     <div>
       {/* <h2 className="text-xl mb-4 ">Rate this:</h2> */}
-      {stars}
+      {stars} 
       <div className=" ml-2 inline">
-        {selectedStars.length} / {stars.length}
+         {selectedStars.length} / {stars.length}
       </div>
     </div>
   );
