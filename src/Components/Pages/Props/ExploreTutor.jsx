@@ -1,4 +1,6 @@
+
 import {AiOutlineHeart} from 'react-icons/ai'
+import coverimg from '../../../assets/images/homepage/Maskgroup2.png'
 const ExploreTutor = ({ exploretutordata }) => {
   const { id, name, city, phone, email, balance, picture } = exploretutordata
   return (
@@ -9,12 +11,12 @@ const ExploreTutor = ({ exploretutordata }) => {
 
         <div key={id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-white dark:border-gray-700 mb-10">
           <a href="#">
-            <img className="rounded-t-lg" src={picture} alt="404" />
+            <img className="rounded-t-lg w-full shadow" src={coverimg} alt="404" />
           </a>
-          <div className="p-5">
+          <div className="p-3">
             <div className="flex items-center space-x-4 mb-3">
 
-              <div className="flex-1 min-w-0">
+              <div className="flex-1 min-w-[244px]">
                 <p className="text-lg font-bold text-[#2c6777] truncate ">
                   {name}
                 </p>
@@ -22,7 +24,7 @@ const ExploreTutor = ({ exploretutordata }) => {
                   {city}
                 </p>
               </div>
-              <div className="inline-flex items-center text-base font-medium text-gray-900 ">
+              <div className="inline-flex items-center text-xl font-medium text-gray-900 ">
               <AiOutlineHeart></AiOutlineHeart>
               </div>
             </div>
@@ -36,7 +38,7 @@ const ExploreTutor = ({ exploretutordata }) => {
                 </p>
 
               </div>
-              <div className="inline-flex items-center text-base font-normal text-gray-900 ">
+              <div className="inline-flex items-center text-base font-medium text-gray-900 ">
                 {phone}
               </div>
             </div>
@@ -48,7 +50,7 @@ const ExploreTutor = ({ exploretutordata }) => {
                 </p>
 
               </div>
-              <div className="inline-flex items-center text-base font-normal text-gray-900 ">
+              <div className="inline-flex items-center text-base font-medium text-gray-900 ">
                 {email}
               </div>
             </div>
@@ -60,7 +62,7 @@ const ExploreTutor = ({ exploretutordata }) => {
                 </p>
 
               </div>
-              <div className="inline-flex items-center text-base font-normal text-gray-900 ">
+              <div className="inline-flex items-center text-base font-medium text-gray-900 ">
                 {balance}
               </div>
             </div>
@@ -73,7 +75,7 @@ const ExploreTutor = ({ exploretutordata }) => {
                 </p>
 
               </div>
-              <div className="inline-flex items-center  text-sm font-normal text-gray-900 ">
+              <div className="inline-flex items-center  text-sm font-medium text-gray-900 ">
                 B.Tech/B.E.
               </div>
             </div>

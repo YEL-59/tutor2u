@@ -6,13 +6,13 @@ const Cards = ({ carditem }) => {
   return (
     <>
 
-      <div className="w-full shadow-lg border border-blue-700 p-2 rounded-lg">
+      <div className="w-full  shadow-lg border border-[#089bab] p-2 rounded-lg">
         <div className="flex gap-5 items-center ">
           <div >
-            <img className="h-20 w-20 rounded" src={image } alt="404" />
+            <img className="h-20 w-20 rounded " src={image } alt="404" />
           </div>
           <div>
-            <p>{subject}</p>
+            <p className="font-bold">{subject}</p>
           </div>
         </div>
 
