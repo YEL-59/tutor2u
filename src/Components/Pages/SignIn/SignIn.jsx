@@ -1,16 +1,26 @@
 import signinimg from "../../../assets/images/signin/signin-side-img.png";
 import logoimg from "../../../assets/images/navbar/main-logo.png";
 import { Link } from "react-router-dom";
+import ParticleBackground from "../../utils/ParticleComponent/ParticleComponent";
+
+
 
 const SignIn = () => {
+
+
+
     return (
         <>
+         
             <section className="min-h-screen flex items-stretch text-black ">
+          
                 <div
-                    className="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center text-white"
-                    style={{ backgroundImage: `url(${signinimg})` }}
+                    className="lg:flex z-10 w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center text-white"
+                     style={{ backgroundImage: `url(${signinimg})` }}
+                  
                 >
-                    <div classclassName="absolute bg-black opacity-60 inset-0 z-0"></div>
+                         <ParticleBackground/>
+                    <div className="absolute bg-black opacity-60 inset-0 z-0"></div>
                     <div className="w-full xl:px-24 md:px-8 z-10">
                         <h1 className="xl:text-5xl lg:text-4xl font-bold text-left tracking-wide">
                             Keep it special
@@ -21,6 +31,7 @@ const SignIn = () => {
                         </p>
                     </div>
                 </div>
+            
                 <div className="lg:w-1/2 w-full flex items-center justify-center text-center xl:px-16 md:px-6 px-0 z-0 bg-[#f5f4ef]">
                     {/* <div className="absolute lg:hidden z-10 inset-0 bg-gray-500 bg-no-repeat bg-cover items-center" style={{ backgroundImage: `url(${signinimg})` }}>
                         <div className="absolute bg-black opacity-60 inset-0 z-0"></div>
@@ -34,7 +45,7 @@ const SignIn = () => {
                         </h1>
 
                         <p className="text-[#2C6777]">Sign up or Log in to your account</p>
-                        <form action="" class="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
+                        <form action="" className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
                             <div className="pb-2 pt-4 ">
                                 <label className="block mb-2 text-lg font-bold text-[#2C6777] text-start ml-2 ">
                                     Email
@@ -68,7 +79,7 @@ const SignIn = () => {
                                         className="w-4 h-4  bg-[#2C6777] border-[#2C6777] rounded  "
                                     />
                                     <label
-                                        for="checkbox-1"
+                                        htmlFor="checkbox-1"
                                         className="ml-2 text-sm font-medium text-black"
                                     >
                                         Remember me
