@@ -6,7 +6,7 @@
 
 <h2>🚀 Demo</h2>
 
-[tutor2u.vercel.app](tutor2u.vercel.app)
+[https://tutor2u.vercel.app/](https://tutor2u.vercel.app/)
 
   
   
