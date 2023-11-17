@@ -15,7 +15,7 @@ const SignIn = () => {
             <section className="min-h-screen flex items-stretch text-black ">
           
                 <div
-                    className="lg:flex z-10 w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center text-white"
+                    className="lg:flex  w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center text-white"
                      style={{ backgroundImage: `url(${signinimg})` }}
                   
                 >
