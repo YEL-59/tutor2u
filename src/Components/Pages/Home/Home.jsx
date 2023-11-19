@@ -142,7 +142,7 @@ const Home = () => {
         <div className="container mx-auto grid items-center lg:grid-cols-2">
           <div className="text-center lg:text-left pt-10">
             <div className="mb-8 inline-flex items-center">
-              <p className="block antialiased font-sans text-sm leading-normal mr-3 py-0.5 px-3 font-bold text-dark uppercase border-r border-dark text-[#2c6777]">
+              <p className="block antialiased font-sans text-sm leading-normal mr-3 py-0.5 px-3 font-bold text-dark uppercase border-r border-dark text-[#9fa8ab]">
                 New
               </p>
               <p className="antialiased font-sans text-sm  leading-normal text-inherit flex items-center font-bold uppercase">
@@ -286,7 +286,7 @@ const Home = () => {
               </div>
             </div>
             <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center  flex justify-center md:justify-end">
-              <img alt="Top-Banner-Side-Image" className=" " src={homebg3} />
+              <img alt="Top-Banner-Side-Image" className=" " src={'https://learnmate.com.au/wp-content/uploads/2023/10/penny-graphics.svg'} />
             </div>
           </div>
         </div>
