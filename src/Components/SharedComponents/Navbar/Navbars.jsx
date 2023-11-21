@@ -17,7 +17,7 @@ const Navbars = () => {
         <>
             <div>
                 <nav className="container mx-auto md:flex justify-between items-center text-black py-[18.5px] ">
-                    <div className=" ">
+                    <div className="p-2 md:p-0 lg:p-0 ">
                         <img src={navlogo} alt=" main logo" />
                     </div>
 
@@ -31,7 +31,7 @@ const Navbars = () => {
                         }`}
                     >
                         {Links.map((link) => (
-                            <li key={link.name} className="md:ml-4 md:text-[8px] truncate md:my-0 my-7 lg:text-lg">
+                            <li key={link.name} className="md:ml-4 md:text-[11px] truncate md:my-0 my-7 lg:text-lg">
                                 <Link to={link.link} className="duration-500 font-medium">
                                     {link.name}
                                 </Link>
@@ -46,11 +46,11 @@ const Navbars = () => {
                     </ul>
 
                     <div className={`hidden md:flex md:items-center ml-2 md:justify-between md:gap-5 ${open ? 'right-19' : 'hidden'}`}>
-                        <button className="bg-[#d6e5f1] text-[#2c6777] px-3 py-1 rounded font-semibold truncate">
+                        <button className="bg-[#d6e5f1] text-[#2c6777] md:text-[11px] lg:text-[16px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
                             <Link to="/becomea_tutor">Become a tutor</Link>
                         </button>
 
-                        <button className="bg-[#2c6777] text-white px-3 py-1 rounded font-semibold truncate">
+                        <button className="bg-[#2c6777] text-white md:text-[11px] lg:text-[16px] px-3 py-1 rounded font-semibold lg:font-medium truncate">
                             <Link to="/sign_in">Sign in</Link>
                         </button>
                     </div>
