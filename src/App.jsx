@@ -13,6 +13,8 @@ import NotFoundpage from './Components/Pages/NotFoundPage/NotFoundpage';
 //import Resources from './Components/Pages/Resources/Resources';
 import Blog from './Components/Pages/Blog/Blog';
 import TutorProfileDetails from './Components/Pages/TutorProfileDetailsPage/TutorProfileDetails';
+import TutionJob from './Components/Pages/TutionJob/TutionJob';
+import TutionJobDetails from './Components/Pages/TutionJobDetails/TutionJobDetails';
 //import TutionJobDetails from './Components/Pages/TutionJobDetails/TutionJobDetails';
 //import TutorReviewPage from './Components/Pages/TutorreviewPage/TutorReviewPage';
 //import DownloadResource from './Components/Pages/DownloadResource/DownloadResource';
@@ -23,6 +25,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about_us" element={<AboutUs />} />
+        <Route path="/tutor_job" element={<TutionJob/>} />
+        <Route path="/tutor_job_details" element={<TutionJobDetails/>} />
         {/* <Route path="/blog_detail" element={<BlogDetail />} /> */}
         <Route path="/contact_us" element={<ContactUs />} />
         <Route path="/request_tutor" element={<RequestTutor />} />
