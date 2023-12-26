@@ -1,7 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from './Components/Pages/Home/Home';
 import AboutUs from './Components/Pages/AboutUs/AboutUs';
-//import BlogDetail from './Components/Pages/BlogDetail/BlogDetail';
 import ContactUs from './Components/Pages/ContactUs/ContactUs';
 import RequestTutor from './Components/Pages/RequestTutor/RequestTutor';
 import FindTutor from './Components/Pages/FindTutor/FindTutor';
@@ -16,6 +15,7 @@ import TutorProfileDetails from './Components/Pages/TutorProfileDetailsPage/Tuto
 import TutionJob from './Components/Pages/TutionJob/TutionJob';
 import TutionJobDetails from './Components/Pages/TutionJobDetails/TutionJobDetails';
 import Resources from './Components/Pages/Resources/Resources';
+import BlogDetail from './Components/Pages/BlogDetail/BlogDetail';
 //import TutionJobDetails from './Components/Pages/TutionJobDetails/TutionJobDetails';
 //import TutorReviewPage from './Components/Pages/TutorreviewPage/TutorReviewPage';
 //import DownloadResource from './Components/Pages/DownloadResource/DownloadResource';
@@ -28,7 +28,7 @@ const App = () => {
         <Route path="/about_us" element={<AboutUs />} />
         <Route path="/tutor_job" element={<TutionJob/>} />
         <Route path="/tutor_job_details" element={<TutionJobDetails/>} />
-        {/* <Route path="/blog_detail" element={<BlogDetail />} /> */}
+        <Route path="/blog_detail" element={<BlogDetail />} />
         <Route path="/contact_us" element={<ContactUs />} />
         <Route path="/request_tutor" element={<RequestTutor />} />
         <Route path="/find_tutor" element={<FindTutor />} />
