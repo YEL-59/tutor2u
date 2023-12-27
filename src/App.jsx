@@ -16,8 +16,9 @@ import TutionJob from './Components/Pages/TutionJob/TutionJob';
 import TutionJobDetails from './Components/Pages/TutionJobDetails/TutionJobDetails';
 import Resources from './Components/Pages/Resources/Resources';
 import BlogDetail from './Components/Pages/BlogDetail/BlogDetail';
+import TutorReviewPage from './Components/Pages/TutorReviewPage/TutorReviewPage';
 //import TutionJobDetails from './Components/Pages/TutionJobDetails/TutionJobDetails';
-//import TutorReviewPage from './Components/Pages/TutorreviewPage/TutorReviewPage';
+
 //import DownloadResource from './Components/Pages/DownloadResource/DownloadResource';
 
 const App = () => {
@@ -40,8 +41,8 @@ const App = () => {
         <Route path='/tutor_resources' element={<Resources />} /> */}
          <Route path='/tutor_resources' element={<Resources />} />
         <Route path='/tutor_blog' element={<Blog />} />
-        {/* <Route path='/tutor_reviews' element={<TutorReviewPage />} />
-        <Route path='/tutor_download_resource' element={<DownloadResource />} /> */}
+        <Route path='/tutor_reviews' element={<TutorReviewPage />} />
+         {/*<Route path='/tutor_download_resource' element={<DownloadResource />} /> */}
         {/*  <Route path="/find_tutor" element={<FindTutor/>}/> */}
 
 
