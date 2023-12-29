@@ -459,7 +459,7 @@ const AboutUs = () => {
                 </div>
 
             </section>
-            {/* FAQ section end */}
+            {/* FAQ section end    */}
 
             <section className="">
                 <Footer />
