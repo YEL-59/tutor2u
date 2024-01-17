@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbars from "../../SharedComponents/Navbar/Navbars";
 import aboutsideimg from "../../../assets/AboutUs/about-us-side-banner.png";
 import problemresolvedsideimg from "../../../assets/AboutUs/problem-resolved-side-img.png";
@@ -10,14 +10,26 @@ import Footer from "../../SharedComponents/Footer/Footer";
 const AboutUs = () => {
     const [navfix, setNavfix] = useState(false);
 
-    function setFixed() {
-        if (window.scrollY >= 70) {
-            setNavfix(true);
+    useEffect(() => {
+      function setFixed() {
+        if (typeof window !== "undefined" && window.scrollY >= 70) {
+          setNavfix(true);
+          //console.log(scrollY)
         } else {
-            setNavfix(false);
+          setNavfix(false);
         }
-    }
-    window.addEventListener("scroll", setFixed);
+      }
+      
+      if (typeof window !== "undefined") {
+        window.addEventListener("scroll", setFixed);
+      }
+    
+      return () => {
+        if (typeof window !== "undefined") {
+          window.removeEventListener("scroll", setFixed);
+        }
+      };
+    }, []);
     return (
         <>
              <div
