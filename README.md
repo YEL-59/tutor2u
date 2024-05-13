@@ -1,6 +1,6 @@
 
 
-<h1 align="center" id="title">Tutor2U</h1>
+<h1 align="center" id="title">Tutor2U..</h1>
 
 <p id="description">it is a website where a student find teacher easily and assess multiple course download etc</p>
 
